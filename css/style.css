@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Hammersmith One', sans-serif;
+    background-color: #333;
+    font-size: larger;
+}
+
+header {
+    height: 4.3125rem;
+    flex-shrink: 0;
+    background: #fff;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.header-principal {
+    /* position: relative; */
+    height: 5.25rem;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 3.8125rem;
+    height: 3.8125rem;
+    display: flex;
+    margin: auto;
+}
+
+.simb-contraste {
+    width: 2.625rem;
+    height: 2.625rem;
+    flex-shrink: 0;
+}
+
+.bloco-acess {
+    display: flex;
+    align-items: center;
+    float: right;
+    margin: 0 20px;
+}
+
+#menu {
+    z-index: 2;
+}
+
+#menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: #333;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+.nav {
+    transition: 0.3s ease;
+    display: none;
+}
+
+.nav ul {
+    padding: 0 22px;
+}
+
+.nav li {
+    list-style: none;
+    padding: 12px 0;
+}
+
+.nav li a {
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    font-weight: bold;
+}
+
+.menu-bg,
+#menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #FFE600, #FFE600);
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.change {
+    display: block;
+}
+
+.change .bar {
+    background-color: #333;
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%, -30%);
+}
+
+.block-header {
+    display: flex;
+    margin: 0 20px;
+}
+
+.block-header-logo {
+    margin: 50%;
+    position: absolute;
+}
+
+.botao-header {
+    margin-right: 20px;
+    color: #FFE600;
+}
+
+.botao-header :hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.login-button {
+    border-radius: 0.6875rem;
+    height: 30px;
+    width: 100px;
+    background: #FFE600;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: medium;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+/* 
+
+*/
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.img-trabalhadores{
+    width: 100%;
+}
+
+.busca{
+    background-color: #fff;
+    border: solid 1px;
+    border-radius: 15px;
+    width: 50%;
+    display: inline;
+}
+
+#txtBusca{
+    background-color: transparent;
+    font-style: italic;
+    font-size: 18px;
+    height: 32px;
+    width: 260px;
+    padding-left: 1%;
+}
+
+.lupa{
+    width: 1%;
+}
+
+.btnPesquisa{
+    width: 20%;
+    border: solid 1px;
+    border-radius: 15px;
+    background-color: #FFE600;
+    padding: 0.5%;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+.divH2{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+}
+
+.divH2 h2{
+    color: white;
+}
+
+.divBusca{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    background-color: #D9D9D9;
+    ;
+}
+
+.areasTrabalho{
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.vagas{
+    background-color: #FFE600;
+    border: solid 1px;
+    border-radius: 15px;
+    padding: 5%;
+    width: 20%;
+    margin: 5%;
+    cursor: pointer;
+}
+
+.vagas img{
+    width: 50%;
+    height: 50%;
+    margin-left: 30%;
+    margin-right: 40%;
+}
+
+.vagas a{
+    font-size: 150%;
+}
+
+.todasVagas{
+    background-color: #FFE600;
+    border: solid 1px;
+    border-radius: 15px;
+    margin-top: 20%;
+    padding: 2%;
+}
+
+.todasVagas a{
+    font-size: 200%;
+}
+
+footer {
+    background: white;
+    width: 100%;
+}
+
+.logo-footer{
+    display: inline;
+    width: 45%;
+    height: 100%;
+}
+
+.logo-footer img{
+    margin: 2%;
+}
+
+.social-media{
+    display: inline;
+    width: 45%;
+    height: 100%;
+}
+
+.social-media button{
+    float: right;
+    margin: 6% 2% 0 0;
+    cursor: pointer;
+}
+
+.divLogin{
+    width: 40%;
+    display: block;
+    background-color: white;
+    margin: 5% 35% 5% 35%;
+    border: solid 1px;
+    border-radius: 15px;
+}
+
+.divLogin img{
+    width: 30%;
+    height: 30%;
+    margin: 5% 35% 0 35%;
+}
+
+.divLogin input{
+    margin: 5% 10% 5% 10%;
+    width: 80%;
+}
+
+.divLogin button{
+    background-color: #FFE600;
+    border: solid 1px;
+    border-radius: 15px;
+    padding: 2%;
+    margin: 5% 30% 5% 30%;
+}
+
+.buscaVagas{
+    background-color: white;
+    margin: 5% 7% 5% 7%;
+    border: solid 1px;
+    border-radius: 15px;
+    padding: 2%;
+}
+.buscaVagas input{
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 40%;
+    border: solid 1px;
+    border-radius: 15px;
+    padding: 2%;
+}
+
+.buscaVagas button{
+    background-color: #FFE600;
+    border: solid 1px;
+    border-radius: 15px;
+    padding: 2%;
+    margin: 0 40% 0 40%;
+}
+
+.vagasDisponiveis{
+    background-color: white;
+    margin: 5% 7% 5% 7%;
+    border: solid 1px;
+    border-radius: 15px;
+    padding: 2%;
+}
+
+.qtdVagas{
+    text-align: center;
+    color: white;
+    margin: 5% 7% 5% 7%;
+}
+
+.btnVaga{
+    background-color: #FFE600;
+    border: solid 1px;
+    border-radius: 15px;
+    padding: 2%;
+    margin: 5% 15% 5% 15%;
+    float: right;
+}
+
+.dadosContato {
+    background-color: white;
+    margin: 5% 7% 5% 7%;
+    border: solid 1px;
+    border-radius: 15px;
+    padding: 2%;
+}
+
+.usarDados{
+    background-color: #D9D9D9;
+    border: solid 1px;
+    border-radius: 15px;
+    padding: 2%;
+    margin: 2% 35% 2% 35%;
+    width: 35%;
+}
+
+.dadosContato p{
+    text-align: center;
+}
+
+.dadosContato h4{
+    text-align: left;
+    margin: 2% 0 2% 0;
+}
+
+.dadosContato h5{
+    text-align: center;
+    margin: 2% 5% 5% 5%;
+}
+
+.dadosContato input{
+    margin-right: 2%;
+    margin-bottom: 2%;
+    width: 80%;
+    border: solid 1px;
+    border-radius: 15px;
+    padding: 2%;
+}
+
+.uploadTodo{
+    margin: 2%;
+    height: 100%;
+}
+
+.curriculoUpload{
+    display: inline;
+    float: left;
+    width: 50%;
+    height: 70%;
+    margin-right: 10%;
+}
+
+.curriculoUpload p{
+    width: 50%;
+    text-align: left;
+    margin-right: 2%;
+}
+
+.localUpload{
+    background-color: #D9D9D9;
+    width: 50%;
+    padding: 0.5%;
+    margin-right: 2%;
+}
+
+.localUpload p{
+    width: 80%;
+}
+
+.aplicar{
+    background-color: #FFE600;
+    border: solid 1px;
+    border-radius: 15px;
+    padding: 2%;
+    width: 15%;
+    margin-left: 25%;
+    float: right;
+}
+
+.ajudaVaga{
+    margin: 5%;
+}
+
+.ajudaVaga p{
+    display: inline;
+    width: 70%;
+}
+
+.ajudaVaga p a{
+   width: 5%;
+}
+
+#inputLogin{
+    padding: 2%;
+    border: solid 1px;
+    border-radius: 15px;
+}
+.divTextoLogin p{
+    font-size: medium;
+}
+
+.perfil {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+}
+
+.processo{
+    padding: 5%;
+}
+
+.processo h2{
+    text-align: center;
+    color: white;
+    margin: 2%;
+}
+
+.processo button{
+    background-color: #FFE600;
+    border: solid 1px;
+    border-radius: 15px;
+    padding: 2%;
+    width: 20%;
+    margin: 5% 40% 5% 40%;
+}
+
+.processo button a{
+    font-size: 200%;
+}
